@@ -19,6 +19,7 @@ public class MyCredentialRecyclerViewAdapter extends RecyclerView.Adapter<MyCred
 
     private final List<PlaceholderItem> mValues;
 
+    //is called from CredentialsFragment.java
     public MyCredentialRecyclerViewAdapter(List<PlaceholderItem> items) {
         mValues = items;
     }
@@ -49,13 +50,13 @@ public class MyCredentialRecyclerViewAdapter extends RecyclerView.Adapter<MyCred
 
         public ViewHolder(FragmentItemBinding binding) {
             super(binding.getRoot());
-            mIdView = binding.itemNumber;
-            mContentView = binding.content;
+            mIdView = binding.url; //from fragment_item.xml
+            mContentView = binding.username; //from fragment_item.xml
         }
 
-        @Override
-        public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
-        }
+//        @Override
+//        public String toString() {
+//            return super.toString() + " '" + mContentView.getText() + "'";
+//        }
     }
 }

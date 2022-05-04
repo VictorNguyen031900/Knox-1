@@ -65,7 +65,8 @@ public class CredentialFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyCredentialRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new MyCredentialRecyclerViewAdapter(PlaceholderContent.ITEMS)); //ITEMS array from placeHolderContent.java
+            //
         }
         return view;
     }

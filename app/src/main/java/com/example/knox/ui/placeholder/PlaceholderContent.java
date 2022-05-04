@@ -30,6 +30,8 @@ public class PlaceholderContent {
         for (int i = 1; i <= COUNT; i++) {
             addItem(createPlaceholderItem(i));
         }
+
+
     }
 
     private static void addItem(PlaceholderItem item) {
@@ -38,7 +40,7 @@ public class PlaceholderContent {
     }
 
     private static PlaceholderItem createPlaceholderItem(int position) {
-        return new PlaceholderItem(String.valueOf(position), "Item " + position, makeDetails(position));
+        return new PlaceholderItem(String.valueOf(position), "Item hello " + position, makeDetails(position));
     }
 
     private static String makeDetails(int position) {

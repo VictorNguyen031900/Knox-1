@@ -21,4 +21,10 @@ public interface PasswordDAO {
     void insertAll(Credentials creds);
     @Delete
     void delete(Credentials cred);
+
+    //add (insert)
+    //select (only one)
+    //selectALl (show all without password)
+    //delete
+    //update
 }

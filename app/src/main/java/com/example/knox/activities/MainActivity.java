@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButtonText("Exit Knox")
                 .build();
 
+        biometricPrompt.authenticate(promptInfo); //Show auth prompt without pressing button on start up
+
         Button biometricLogin = findViewById(R.id.fp_button);
         biometricLogin.setOnClickListener(view -> {
             biometricPrompt.authenticate(promptInfo);
